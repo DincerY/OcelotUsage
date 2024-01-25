@@ -15,8 +15,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
+//Bu middleware HTTP üzerinden gelen istekleri HTTPS protokolüne göndermek için kullanılır.
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
